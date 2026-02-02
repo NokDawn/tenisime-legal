@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin - Tenisime</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #F9FAFB;
+            color: #374151;
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+            padding: 48px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .lang-switch {
+            margin-top: 16px;
+        }
+        .lang-switch a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 20px;
+            margin: 0 4px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-switch a:hover, .lang-switch a.active {
+            background: white;
+            color: #059669;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #111827;
+            font-size: 20px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #10B981;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .date {
+            color: #6B7280;
+            font-size: 14px;
+        }
+        .warning {
+            background: #FEF3C7;
+            border-left: 4px solid #F59E0B;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        /* Language sections */
+        .lang-pl, .lang-en {
+            display: none;
+        }
+        .lang-pl.active, .lang-en.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎾 Tenisime</h1>
+        <p>Regulamin / Terms of Service</p>
+        <div class="lang-switch">
+            <a href="#" onclick="switchLang('pl')" id="btn-pl" class="active">Polski</a>
+            <a href="#" onclick="switchLang('en')" id="btn-en">English</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Powrót / Back</a>
+
+        <!-- POLISH VERSION -->
+        <div class="lang-pl active">
+            <p class="date">Ostatnia aktualizacja: 2 lutego 2026</p>
+
+            <div class="section">
+                <h2>1. Wprowadzenie</h2>
+                <p>Witamy w Tenisime. Niniejszy Regulamin ("Regulamin") reguluje korzystanie z naszej aplikacji mobilnej i usług. Uzyskując dostęp do Tenisime lub korzystając z niej, zgadzasz się przestrzegać niniejszego Regulaminu.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Akceptacja warunków</h2>
+                <p>Tworząc konto lub korzystając z naszych usług, potwierdzasz, że przeczytałeś, zrozumiałeś i zgadzasz się przestrzegać niniejszego Regulaminu. Jeśli nie zgadzasz się z tym Regulaminem, nie możesz korzystać z naszych usług.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Uprawnienia</h2>
+                <p>Aby korzystać z Tenisime, musisz:</p>
+                <ul>
+                    <li>Mieć ukończone 13 lat</li>
+                    <li>Posiadać zdolność prawną do zawierania wiążących umów</li>
+                    <li>Nie być objętym zakazem korzystania z naszych usług na mocy obowiązującego prawa</li>
+                    <li>Podać dokładne i kompletne informacje rejestracyjne</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Odpowiedzialność za konto</h2>
+                <p>Jesteś odpowiedzialny za:</p>
+                <ul>
+                    <li>Zachowanie poufności danych logowania do konta</li>
+                    <li>Wszystkie działania podejmowane na Twoim koncie</li>
+                    <li>Natychmiastowe powiadomienie nas o nieautoryzowanym użyciu</li>
+                    <li>Utrzymywanie aktualnych informacji profilowych</li>
+                </ul>
+                <p>Zastrzegamy sobie prawo do zawieszenia lub zamknięcia kont naruszających niniejszy Regulamin.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Dozwolone użytkowanie</h2>
+                <p>Zgadzasz się nie:</p>
+                <ul>
+                    <li>Używać usługi w celach niezgodnych z prawem</li>
+                    <li>Nękać, obrażać lub szkodzić innym użytkownikom</li>
+                    <li>Podszywać się pod inne osoby lub podmioty</li>
+                    <li>Publikować fałszywych, wprowadzających w błąd lub obraźliwych treści</li>
+                    <li>Próbować uzyskać nieautoryzowany dostęp do naszych systemów</li>
+                    <li>Zakłócać prawidłowego działania usługi</li>
+                    <li>Używać zautomatyzowanych środków dostępu do usługi bez pozwolenia</li>
+                    <li>Naruszać prywatności innych użytkowników</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Treści użytkowników</h2>
+                <p>Zachowujesz własność tworzonych przez siebie treści. Publikując treści, udzielasz nam niewyłącznej, ogólnoświatowej, bezpłatnej licencji na używanie, wyświetlanie i dystrybucję Twoich treści w związku z naszymi usługami.</p>
+                <p>Jesteś wyłącznie odpowiedzialny za publikowane treści i musisz upewnić się, że nie naruszają one żadnych przepisów ani praw osób trzecich.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Własność intelektualna</h2>
+                <p>Tenisime oraz jej oryginalna zawartość, funkcje i funkcjonalność są naszą własnością i są chronione przez międzynarodowe prawa autorskie, znaki towarowe i inne prawa własności intelektualnej.</p>
+                <p>Nie możesz kopiować, modyfikować, dystrybuować ani tworzyć dzieł pochodnych na podstawie naszej aplikacji bez naszej uprzedniej pisemnej zgody.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Wyłączenie gwarancji</h2>
+                <div class="warning">
+                    <p>USŁUGA JEST ŚWIADCZONA "TAK JAK JEST" I "W MIARĘ DOSTĘPNOŚCI" BEZ JAKICHKOLWIEK GWARANCJI, WYRAŹNYCH LUB DOROZUMIANYCH.</p>
+                </div>
+                <p>Nie gwarantujemy, że usługa będzie nieprzerwana, bezpieczna lub wolna od błędów. Nie ponosimy odpowiedzialności za zachowanie użytkowników ani dokładność informacji podawanych przez użytkowników.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Ograniczenie odpowiedzialności</h2>
+                <div class="warning">
+                    <p>W MAKSYMALNYM ZAKRESIE DOZWOLONYM PRZEZ PRAWO NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA JAKIEKOLWIEK SZKODY POŚREDNIE, PRZYPADKOWE, SPECJALNE, WYNIKOWE LUB KARNE WYNIKAJĄCE Z KORZYSTANIA Z USŁUGI.</p>
+                </div>
+                <p>Nasza całkowita odpowiedzialność nie przekroczy kwoty, którą nam zapłaciłeś w ciągu ostatnich 12 miesięcy, jeśli taka istnieje.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Rozwiązanie umowy</h2>
+                <p>Możemy rozwiązać lub zawiesić Twoje konto i dostęp do usługi natychmiast, bez uprzedniego powiadomienia, z dowolnego powodu, w tym naruszenia niniejszego Regulaminu.</p>
+                <p>Po rozwiązaniu Twoje prawo do korzystania z usługi ustaje natychmiast. Postanowienia, które ze względu na swój charakter powinny przetrwać rozwiązanie, pozostaną w mocy.</p>
+            </div>
+
+            <div class="section">
+                <h2>11. Prawo właściwe</h2>
+                <p>Niniejszy Regulamin podlega prawu polskiemu i będzie zgodnie z nim interpretowany, bez względu na przepisy kolizyjne.</p>
+                <p>Wszelkie spory wynikające z niniejszego Regulaminu będą rozstrzygane przez sądy w Polsce.</p>
+            </div>
+
+            <div class="section">
+                <h2>12. Zmiany Regulaminu</h2>
+                <p>Zastrzegamy sobie prawo do modyfikacji niniejszego Regulaminu w dowolnym momencie. Powiadomimy Cię o istotnych zmianach, publikując nowy Regulamin w aplikacji i aktualizując datę "Ostatnia aktualizacja".</p>
+                <p>Dalsze korzystanie z usługi po zmianach oznacza akceptację nowego Regulaminu.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Kontakt</h2>
+                <p>Jeśli masz pytania dotyczące niniejszego Regulaminu, skontaktuj się z nami:</p>
+                <p><strong>E-mail:</strong> <a href="mailto:nookdawn@gmail.com">nookdawn@gmail.com</a></p>
+                <p>Odpowiemy na Twoje zapytanie tak szybko, jak to możliwe.</p>
+            </div>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div class="lang-en">
+            <p class="date">Last updated: February 2, 2026</p>
+
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to Tenisime. These Terms of Service ("Terms") govern your use of our mobile application and services. By accessing or using Tenisime, you agree to be bound by these Terms.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Acceptance of Terms</h2>
+                <p>By creating an account or using our services, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you may not use our services.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Eligibility</h2>
+                <p>To use Tenisime, you must:</p>
+                <ul>
+                    <li>Be at least 13 years of age</li>
+                    <li>Have the legal capacity to enter into a binding agreement</li>
+                    <li>Not be prohibited from using our services under applicable laws</li>
+                    <li>Provide accurate and complete registration information</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Account Responsibilities</h2>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Maintaining the confidentiality of your account credentials</li>
+                    <li>All activities that occur under your account</li>
+                    <li>Notifying us immediately of any unauthorized use</li>
+                    <li>Keeping your profile information accurate and up-to-date</li>
+                </ul>
+                <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Acceptable Use</h2>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use the service for any illegal purpose</li>
+                    <li>Harass, abuse, or harm other users</li>
+                    <li>Impersonate any person or entity</li>
+                    <li>Post false, misleading, or offensive content</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Interfere with the proper functioning of the service</li>
+                    <li>Use automated means to access the service without permission</li>
+                    <li>Violate the privacy of other users</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. User Content</h2>
+                <p>You retain ownership of content you create. By posting content, you grant us a non-exclusive, worldwide, royalty-free license to use, display, and distribute your content in connection with our services.</p>
+                <p>You are solely responsible for content you post and must ensure it does not violate any laws or third-party rights.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Intellectual Property</h2>
+                <p>Tenisime and its original content, features, and functionality are owned by us and are protected by international copyright, trademark, and other intellectual property laws.</p>
+                <p>You may not copy, modify, distribute, or create derivative works based on our app without our prior written consent.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Disclaimer of Warranties</h2>
+                <div class="warning">
+                    <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
+                </div>
+                <p>We do not guarantee that the service will be uninterrupted, secure, or error-free. We are not responsible for the conduct of users or the accuracy of user-provided information.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Limitation of Liability</h2>
+                <div class="warning">
+                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SERVICE.</p>
+                </div>
+                <p>Our total liability shall not exceed the amount you paid us in the past 12 months, if any.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Termination</h2>
+                <p>We may terminate or suspend your account and access to the service immediately, without prior notice, for any reason, including breach of these Terms.</p>
+                <p>Upon termination, your right to use the service will cease immediately. Provisions that by their nature should survive termination will survive.</p>
+            </div>
+
+            <div class="section">
+                <h2>11. Governing Law</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of Poland, without regard to its conflict of law provisions.</p>
+                <p>Any disputes arising from these Terms will be resolved in the courts of Poland.</p>
+            </div>
+
+            <div class="section">
+                <h2>12. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by posting the new Terms in the app and updating the "Last updated" date.</p>
+                <p>Your continued use of the service after changes constitutes acceptance of the new Terms.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Contact Us</h2>
+                <p>If you have any questions about these Terms of Service, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:nookdawn@gmail.com">nookdawn@gmail.com</a></p>
+                <p>We will respond to your inquiry as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-pl, .lang-en').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('active'));
+            document.getElementById('btn-pl').classList.toggle('active', lang === 'pl');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+</body>
+</html>

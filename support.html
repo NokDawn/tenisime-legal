@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wsparcie - Tenisime</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #F9FAFB;
+            color: #374151;
+            line-height: 1.7;
+        }
+        .header {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+            padding: 48px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: #10B981;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .card h2 {
+            color: #111827;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        .card p {
+            color: #6B7280;
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+        .faq {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .faq h2 {
+            color: #111827;
+            font-size: 20px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #10B981;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            color: #111827;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #6B7280;
+            font-size: 14px;
+        }
+        .info {
+            margin-top: 32px;
+            text-align: center;
+            color: #6B7280;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎾 Tenisime</h1>
+        <p>Wsparcie / Support</p>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Powrót / Back</a>
+
+        <div class="card">
+            <div class="card-icon">📧</div>
+            <h2>Skontaktuj się z nami</h2>
+            <p>Masz pytanie, problem lub sugestię? Napisz do nas, a odpowiemy najszybciej jak to możliwe.</p>
+            <a href="mailto:nookdawn@gmail.com?subject=Tenisime Support" class="btn">
+                Napisz e-mail
+            </a>
+        </div>
+
+        <div class="faq">
+            <h2>Często zadawane pytania / FAQ</h2>
+
+            <div class="faq-item">
+                <h3>🇵🇱 Jak zmienić swój poziom NTRP?</h3>
+                <p>Wejdź w Profil → Edytuj profil → Poziom umiejętności i wybierz odpowiedni poziom.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🇵🇱 Jak usunąć konto?</h3>
+                <p>Wejdź w Ustawienia → Przewiń na dół → Usuń konto. Uwaga: tej operacji nie można cofnąć.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🇵🇱 Jak zablokować użytkownika?</h3>
+                <p>Wejdź w profil użytkownika → Kliknij trzy kropki (⋮) → Zablokuj użytkownika.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🇬🇧 How to change my NTRP level?</h3>
+                <p>Go to Profile → Edit Profile → Skill Level and select your level.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🇬🇧 How to delete my account?</h3>
+                <p>Go to Settings → Scroll down → Delete Account. Note: this action cannot be undone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🇬🇧 How to block a user?</h3>
+                <p>Go to user's profile → Tap three dots (⋮) → Block user.</p>
+            </div>
+        </div>
+
+        <p class="info">
+            Odpowiadamy zazwyczaj w ciągu 24-48 godzin.<br>
+            We usually respond within 24-48 hours.
+        </p>
+    </div>
+</body>
+</html>
